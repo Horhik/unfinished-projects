@@ -1,7 +1,9 @@
-#!/bin/python
 import speech_recognition as sr
 import pyttsx3
 from process_text import process_text
+
+print("HELLOOOO")
+
 botname = "андрей"
 text = 'какой-нибудь текст'
 tts = pyttsx3.init()
@@ -26,7 +28,7 @@ def say(text):
         tts.runAndWait()
 def process_speech(text):
     #if (text.find("слушай " + botname)):
-#        say("Привет сучка, что тебе надо?")
+#        say("Привет, что тебе надо?")
 #    else:
      say(text)
 
