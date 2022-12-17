@@ -1,0 +1,4 @@
+fn stirling_numbers_2_kind(n: u32, k: u32){
+    if u < k
+}
+

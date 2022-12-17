@@ -37,7 +37,7 @@ pub async fn play_chaos_game(_figure: Points, rule: f32) {
     let figure = _figure.0;
     let mut rng = rand::thread_rng();
     let mut i: usize = 2;
-    let n: usize = 900000;
+    let n: usize = 90000;
     let kek: u32 = rng.gen_range(0..(i as u32));
     let colors = vec![RED, GREEN, BLUE, YELLOW, MAGENTA, ORANGE, PURPLE];
     let mut prev = figure[kek as usize];
@@ -53,6 +53,6 @@ pub async fn play_chaos_game(_figure: Points, rule: f32) {
         let next = (x, y);
         prev = next;
         i += 1;
-        draw_circle(x + 10.0, y + 10.0, 1.0, color);
+        draw_circle(x + 10.0, y + 10.0, 5.0, color);
     }
 }
